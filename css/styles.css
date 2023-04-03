@@ -323,6 +323,10 @@ img {
   color: #434455;
 }
 
+.works {
+  display: none;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 430px;
@@ -547,81 +551,36 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
   }
+
+  .works {
+    display: block;
+    padding-bottom: 120px;
+  }
+
+  .works-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 1128px;
+  }
+
+  .works-list-item:not(:nth-child(3n)) {
+    margin-right: 24px;
+  }
+
+  .works-heading {
+    margin-bottom: 72px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    letter-spacing: 0.02em;
+  }
 }
-
-/* Contacts */
-/* 
- */
-
-/* Why us */
-/* .page-why-us-container {
-  display: flex;
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.why-us-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.why-us-list-item {
-  flex-basis: calc(100% / 4 - 24px);
-}
-
-.why-us-list-img-container {
-  background-color: #f4f4fd;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 8px;
-  padding: 24px 100px;
-}
-
-.why-us-list-img {
-  width: 64px;
-  height: 64px;
-}
-
-.why-us-list-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-}
-
-.why-us-list-description {
-  width: 264px;
-  margin-top: 8px;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-} */
 
 /* What are we doing */
-/* .works {
-  padding-bottom: 120px;
-}
-
-.works-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.works-list-item:not(:nth-child(3n)) {
-  margin-right: 24px;
-}
-
-.works-heading {
-  margin-bottom: 72px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-transform: capitalize;
-  letter-spacing: 0.02em;
-} */
+/* */
 
 /* Our Team */
 /* .team {
