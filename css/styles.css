@@ -795,7 +795,7 @@ img {
   }
 
   .footer-email-textbox {
-    width: 264px;
+    min-width: 264px;
   }
 }
 
