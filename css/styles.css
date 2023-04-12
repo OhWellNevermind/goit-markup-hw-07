@@ -197,6 +197,9 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid #e7e9fc;
+  border: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header-container {
@@ -1244,157 +1247,17 @@ img {
   }
 }
 
-/* Footer */
-/* .footer {
-  background: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.footer-logo-container {
-  margin-bottom: 16px;
-}
-
-.footer-text-logo-container {
-  margin-right: 120px;
-}
-
-.footer-logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 800;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: #4d5ae5;
-}
-
-.footer-logo-part {
-  color: #f4f4fd;
-}
-
-.footer-text-container {
-  width: 264px;
-}
-
-.footer-text {
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #e7e9fc;
-  letter-spacing: 0.02em;
-}
-
-.footer-social-media-title {
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  margin-bottom: 16px;
-}
-
-.footer-social-media-list {
-  display: flex;
-}
-.footer-list-item:not(:last-child) {
-  margin-right: 16px;
-}
-
-.footer-social-media-link {
-  background-color: rgba(255, 255, 255, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-social-media-img {
-  width: 24px;
-  height: 24px;
-}
-
-.footer-social-media-link:hover,
-.footer-social-media-link:focus {
-  background-color: #31d0aa;
-}
-
-.footer-mailing-list {
-  margin-left: 80px;
-}
-
-.footer-form-title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  margin-bottom: 16px;
-}
-
-.footer-email-textbox {
-  width: 264px;
-  height: 40px;
-  padding: 8px 16px;
-  background-color: transparent;
-  box-shadow: none;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  margin-right: 24px;
-  font-family: "Roboto";
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-  color: #fff;
-}
-
-.footer-send-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #4d5ae5;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  padding: 8px 24px;
-  cursor: pointer;
-}
-
-.footer-send-btn-icon {
-  margin-left: 16px;
-  fill: #fff;
-  width: 24px;
-  height: 20px;
-}
-
-.input-btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
 /* portfolio.html */
 .projects-section {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 /* Filter buttons */
 .filter-button-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 72px;
+  gap: 24px 16px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
 }
 
 .filter-button {
@@ -1434,10 +1297,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.project-list-item {
-  margin-bottom: 48px;
+  gap: 48px 0;
 }
 
 .bottom-border {
@@ -1447,14 +1307,6 @@ img {
   border: 1px solid #e7e9fc;
   border-top: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project-list-item:not(:nth-child(3n)) {
-  margin-right: 24px;
-}
-
-.project-list-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 .bottom-border:hover,
@@ -1526,4 +1378,30 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-button-list {
+    justify-content: center;
+  }
+
+  .project-list {
+    justify-content: flex-start;
+    gap: 72px 24px;
+  }
+
+  .project-list-img-wrapper {
+    width: 356px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-list {
+    justify-content: flex-start;
+    gap: 48px 24px;
+  }
+
+  .project-list-img-wrapper {
+    width: 360px;
+  }
 }
